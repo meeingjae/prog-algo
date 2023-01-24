@@ -1,6 +1,6 @@
-package algorithm.hatemiddlenumber;
+package algorithm.hatesamenumber;
 
-public class HateMiddleNumber {
+public class HateSameNumber {
 
     public static int[] solution(int[] source) {
 
