@@ -2,6 +2,8 @@ package algorithm.sumbetweentwointegers;
 
 import org.junit.jupiter.api.Test;
 
+import java.lang.instrument.Instrumentation;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class SumBetweenTwoIntegersTest {
@@ -15,6 +17,8 @@ public class SumBetweenTwoIntegersTest {
         //when:
         final long result = SumBetweenTwoIntegers.solution(source, target);
         //then:
+        Instrumentation instrumentation = null;
+        instrumentation.getObjectSize(SumBetweenTwoIntegers.class);
         assertThat(result).isEqualTo(expected);
     }
 
