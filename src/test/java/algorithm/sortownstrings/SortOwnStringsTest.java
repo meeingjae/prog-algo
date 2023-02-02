@@ -21,7 +21,7 @@ class SortOwnStringsTest {
     @Test
     void test2() {
         //given:
-        final String[] source = { "abcd", "abcd", "cdx" };
+        final String[] source = { "abce", "abcd", "cdx" };
         final int n = 2;
         final String[] expected = { "abcd", "abce", "cdx" };
         //when:
