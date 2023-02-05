@@ -2,8 +2,25 @@ package algorithm.pnyinstring;
 
 public class PNYInString {
 
-    public static boolean solution(String s) {
+    private static final String P = "P";
+    private static final String Y = "Y";
 
-        return false;
+    static boolean solution(String s) {
+
+        if (s == null || s.length() == 0) {
+            return false;
+        }
+        int pCount = 0;
+        int yCount = 0;
+        for (char source : s.toCharArray()) {
+            final String a = String.valueOf(source).toUpperCase();
+            if (a.equals(P)) {
+                pCount++;
+            }
+            if (a.equals(Y)) {
+                yCount++;
+            }
+        }
+        return pCount == yCount;
     }
 }
