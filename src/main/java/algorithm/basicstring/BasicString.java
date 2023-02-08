@@ -2,8 +2,20 @@ package algorithm.basicstring;
 
 public class BasicString {
 
-    public static boolean solution(String s) {
+    private static final int CORRECT_NUM_1 = 4;
+    private static final int CORRECT_NUM_2 = 6;
 
-        return false;
+    public boolean solution(String s) {
+
+        boolean isTrue = false;
+        if (s.length() == CORRECT_NUM_1 || s.length() == CORRECT_NUM_2) {
+            isTrue = true;
+        }
+        for (char c : s.toCharArray()) {
+            if (!Character.isDigit(c)) {
+                isTrue = false;
+            }
+        }
+        return isTrue;
     }
 }
