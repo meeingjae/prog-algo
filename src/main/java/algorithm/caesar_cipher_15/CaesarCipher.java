@@ -4,7 +4,7 @@ public class CaesarCipher {
 
     private static final int ALPHA_INDEX = 26;
 
-    public String solution(String s, int n) {
+    public static String solution(String s, int n) {
 
         StringBuilder result = new StringBuilder();
         for (char c : s.toCharArray()) {
