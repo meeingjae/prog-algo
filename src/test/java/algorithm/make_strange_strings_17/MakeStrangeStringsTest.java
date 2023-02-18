@@ -10,7 +10,7 @@ public class MakeStrangeStringsTest {
     void test1() {
         //given:
         final String s = "try hello world";
-        final String expected = "Try HeLIO WoRID";
+        final String expected = "TrY HeLlO WoRlD";
         //when:
         final String result = MakeStrangeStrings.solution(s);
         //then:

@@ -25,3 +25,8 @@ solution을 완성하세요.
 WoRlD"입니다. 따라서 "TrY HeLlO WoRlD" 를 리턴합니다.
 
 ### 해결 방법
+
+다 풀고 보니 다른 풀이들은 source String을 split("")하여 String 배열로 만들고, toUpperCase 메서드와 toLowerCase 메서드를 남발한다
+String은 그 기본이 static 이기에, 각 메서드 호출 시 새로운 String 객체를 생성한다
+따라서 String이 아닌, Character의 Ascii 값으로 계산할 수 있도록 한다.
+객체를 생성할 필요도 없고, 원시값을 사용함으로써 더 빠른 연산이 가능하다
