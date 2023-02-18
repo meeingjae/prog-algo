@@ -4,6 +4,11 @@ public class SumDigit {
 
     public static int solution(int n) {
 
-        return 0;
+        char[] source = String.valueOf(n).toCharArray();
+        int sum = 0;
+        for (char c : source) {
+            sum += Integer.parseInt(String.valueOf(c));
+        }
+        return sum;
     }
 }
