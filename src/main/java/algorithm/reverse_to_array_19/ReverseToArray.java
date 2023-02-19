@@ -4,6 +4,13 @@ public class ReverseToArray {
 
     public static int[] solution(long n) {
 
-        return new int[0];
+        int[] answer = new int[String.valueOf(n).length()];
+        long cur = n;
+        for (int i = 0; i < answer.length; i++) {
+            int val = (int) (cur % 10);
+            cur = cur / 10;
+            answer[i] = val;
+        }
+        return answer;
     }
 }
