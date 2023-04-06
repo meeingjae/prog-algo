@@ -27,4 +27,15 @@ public class OddEvenTest {
         //then:
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void test3() {
+        //given:
+        final int num = -20000;
+        //when:
+        final String expected = "Even";
+        final String result = OddEven.solution(num);
+        //then:
+        assertThat(result).isEqualTo(expected);
+    }
 }
