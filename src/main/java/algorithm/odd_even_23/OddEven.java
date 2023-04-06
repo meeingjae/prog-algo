@@ -4,6 +4,6 @@ public class OddEven {
 
     public static String solution(int num) {
 
-        return num % 2 == 1 ? "Odd" : "Even";
+        return Math.abs(num) % 2 == 1 ? "Odd" : "Even";
     }
 }
